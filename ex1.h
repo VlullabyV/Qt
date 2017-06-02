@@ -28,11 +28,12 @@ private slots:
 
 private:
     Ui::ex1 *ui;
+    bool ok;
     QUdpSocket *sender;
     QUdpSocket *receiver;
-    QString *temp;
-    quint16 *sendPort;
-    quint16 *receivePort;
+    QHostAddress Ip;
+    quint16 sendPort;
+    quint16 receivePort;
     QUdpSocket *SG;//组播
     QUdpSocket *RG;//组播接收，
 
